@@ -1,0 +1,83 @@
+:source-highlighter: highlightjs
+= Beispiel-Dokumentation mit AsciiDoc 
+Thi Lan Huong Viet
+s79816@htw-dresden.de
+1.0, 01.09.2019 
+:toc: 
+:toc-title: Inhaltsverzeichnis
+// Platzhalter für weitere Dokumenten-Attribute 
+
+== Einführung
+Dieses Dokument dient im Praktikum als Spielwiese für das Kennenlernen und praktische Üben der Syntax von AsciiDoc.KV   
+
+== Kennenlernen der Syntax
+
+Über die Aufgaben wird das Dokument Stück für Stück aufgebaut und angepasst.
+
+=== Listen
+
+.Beispiel: unsortierte Liste 
+// Platzhalter
+* apples
+* orange
+  * temple
+  * navel
+* bananas
+
+.Beispiel: sortierte Liste
+// Platzhalter
+1. first
+2. second
+3. third
+
+=== Tabelle und Textformatierung
+.Formatierung von Text
+|===
+|Formatierung |Syntax |Beschreibung
+
+|*bold*
+|\*bold* 
+|fette Text
+
+|_italic_ 
+|\_italic_
+|kursiver Text
+
+|'monospace'
+|\'monospace'
+|Text mit fester Laufweite
+
+|*_bold&italic_*
+|\*_bold&italic_* 
+|Text mit kombinierter Formatierung
+
+|**bold**&__italic__  
+|\**bold**&__italic__ 
+|Text mit Formatierung innerhalb eines Wortes
+|===
+
+**S**_oftware_ **E**__nginee__ `ring`
+
+=== Quellcode
+._hello_world.c_
+ [source,ruby]
+----
+
+#include <stdio.h>
+
+int main(int argc, char* argv[])
+{
+    printf("Hello, World\n");
+    return 0;
+}
+===Bilder
+
+image :: sc1.png[]
+
+
+===Verweise
+http://www.informatik.htw-dresden.de/~zirkelba/praktika/se/arbeiten_mit_git_und_asciidoc/Praktikumsaufgaben%20Teil%202.html#title_asciidoc
+
+http://www.informatik.htw-dresden.de/~zirkelba/praktika/se/arbeiten_mit_git_und_asciidoc/Praktikumsaufgaben%20Teil%202.html#table_textformation
+
+
